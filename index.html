@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        body {
+            width: 100%;
+            overflow-x: hidden;
+
+        }
+
+        .navbar {
+            background-color: rgba(26, 26, 26, 0.932);
+            height: 14%;
+            width: 100%;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            max-height: 130px;
+        }
+
+        #logo_text {
+            color: white;
+            font-size: 30px;
+            position: absolute;
+            left: 5%;
+            top: 18%;
+            transform: translate(-5%, -50%);
+
+        }
+
+        .pro_ver {
+
+            width: 13%;
+            height: 50px;
+            position: absolute;
+            left: 80%;
+            top: 20%;
+            background: #DA291C;
+            border-radius: 20px;
+        }
+
+        #pv {
+            color: white;
+            position: relative;
+            margin-top: 12px;
+            margin-left: 25%;
+            font-size: 17px;
+        }
+
+        .nav_src {
+            position: absolute;
+            top: 25%;
+            left: 8%;
+        }
+
+        .nav_src2 {
+            position: absolute;
+            top: 45%;
+            right: 22%;
+        }
+
+        #EN {
+            color: white;
+            font-family: HelveticaNeue;
+            position: relative;
+            left: 75%;
+            top: 23%;
+            font-size: 14px;
+        }
+
+        .nav_search {
+            position: absolute;
+            left: 62%;
+            top: 25%;
+            border-radius: 30px;
+            height: 30px;
+            background-color: rgba(217, 217, 217, 0.2);
+            color: white;
+            width: 180px;
+        }
+
+        .nav_search_icon {
+            position: absolute;
+            left: 72%;
+            top: 39%;
+        }
+
+        #contact {
+            color: white;
+            position: relative;
+            left: 54%;
+            bottom: 12%;
+        }
+
+        .em_img {
+            position: relative;
+            bottom: 43%;
+            left: 52%;
+        }
+
+        #sel_1 {
+            background-color: white;
+        }
+
+        .navbar2 {
+            height: 50px;
+            width: 100px;
+            background-color: #DA291C;
+            position: absolute;
+            top: 14%;
+            left: 0%;
+            width: 100%;
+
+        }
+
+        #name_1 {
+            position: absolute;
+            left: 20%;
+            top: 25%;
+            background-color: #DA291C;
+            color: white;
+            border: 0px;
+            font-size: 16px;
+        }
+
+        #name_2 {
+            position: absolute;
+            left: 30%;
+            top: 25%;
+            background-color: #DA291C;
+            color: white;
+            border: 0px;
+            font-size: 16px;
+        }
+
+        #name_3 {
+            position: absolute;
+            left: 40%;
+            top: 25%;
+            background-color: #DA291C;
+            color: white;
+            border: 0px;
+            font-size: 16px;
+        }
+
+        #name_4 {
+            position: absolute;
+            left: 50%;
+            top: 25%;
+            background-color: #DA291C;
+            color: white;
+            border: 0px;
+            font-size: 16px;
+        }
+
+        #name_5 {
+            position: absolute;
+            left: 60%;
+            top: 25%;
+            background-color: #DA291C;
+            color: white;
+            border: 0px;
+            font-size: 16px;
+        }
+
+        #name_6 {
+            position: absolute;
+            left: 75%;
+            top: 25%;
+            background-color: #DA291C;
+            color: white;
+            border: 0px;
+            font-size: 16px;
+        }
+
+        #name_7 {
+            position: absolute;
+            left: 85%;
+            top: 25%;
+            background-color: #DA291C;
+            color: white;
+            border: 0px;
+            font-size: 16px;
+        }
+
+        #name_1:hover,
+        #name_2:hover,
+        #name_3:hover,
+        #name_4:hover,
+        #name_5:hover,
+        #name_6:hover,
+        #name_7:hover {
+            background-color: white;
+            color: #DA291C;
+
+        }
+
+        .overlay {
+            height: 309px;
+            width: 100%;
+            background-image: url('Rectangle 33.png');
+            position: absolute;
+            top: 21%;
+            left: 0%;
+        }
+
+        .overlay_img {
+            height: 309px;
+            float: right;
+        }
+
+        .overlay_wup {
+            position: absolute;
+            top: 33%;
+            left: 10%;
+        }
+
+        .overlay_fillers {
+            position: absolute;
+            top: 20%;
+            left: 10%;
+        }
+
+        .left_wup {
+            position: absolute;
+            top: 70%;
+            width: 219px;
+            height: 309px;
+            left: 10%;
+            font-family: 'HelveticaNeue';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 55px;
+
+
+            color: #000000;
+        }
+
+        .lorem_1 {
+            position: absolute;
+            top: 70%;
+            right: 10%;
+            height: 115px;
+            width: 851px;
+            font-family: 'HelveticaNeue';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            /* or 150% */
+
+
+            color: #4D4D4D;
+        }
+
+        .main_body {
+            position: absolute;
+            top: 120%;
+            right: 10%;
+            width: 851px;
+            height: 907px;
+            background: rgba(230, 230, 230, 0.5);
+        }
+
+        #mb_head {
+            width: 476px;
+            height: 42px;
+
+            font-family: 'HelveticaNeue';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 40px;
+            color: #1B1B1B;
+            margin-left: 25%;
+        }
+
+        .mb_filler_1 {
+           
+            position: absolute;
+            left:23%;
+            width: 537px;
+            height: 144px;
+        }
+        .mb_filler_2{
+          
+            position: absolute;
+            left:23%;
+            top: 30%;
+            width: 537px;
+            height: 96px;
+        }
+        .mb_filler_3{
+          
+          position: absolute;
+          left:23%;
+          top: 45%;
+          width: 537px;
+          height: 93px;
+      }
+      .mb_filler_4{
+        position: absolute;
+          left:23%;
+          top: 58%;
+          width: 537px;
+          height: 168px;
+      }
+      .mb_filler_5{
+        position: absolute;
+          left:23%;
+          top: 78%;
+          width: 250px;
+          height: 144px;
+      }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="navbar">
+            <p id="logo_text">Logo</p>
+            <div class="pro_ver">
+                <p id="pv">Product Verification</p>
+                <img src="1828697 1.png" alt="" class="nav_src">
+            </div>
+            <img src="a 1.png" alt="" class="nav_src2">
+            <p id="EN">EN</p>
+            <div class="searchbar">
+                <input type="text" placeholder="Search" class="nav_search">
+                <img src="s 1.png" alt="" class="nav_search_icon">
+            </div>
+            <p id="contact">Contact</p>
+            <img src="Vector.png" alt="" class="em_img">
+        </div>
+        <div class="navbar2">
+            <select name="Alternators" id="name_1" class="nam">
+                <option value="Alternators">Alternators</option>
+            </select>
+            <select name="Download" id="name_2" class="nam">
+                <option value="Download">Download</option>
+            </select>
+            <select name="Part" id="name_3" class="nam">
+                <option value="Part">Parts</option>
+            </select>
+            <select name="Services" id="name_4" class="nam">
+                <option value="Services">Services</option>
+            </select>
+            <select name="Technical Support" id="name_5" class="nam">
+                <option value="Technical Support">Technical Support</option>
+            </select>
+            <select name="About" id="name_6" class="nam">
+                <option value="About">About</option>
+            </select>
+            <select name="Contact" id="name_7" class="nam">
+                <option value="Contact">Contact</option>
+            </select>
+        </div>
+        <div class="overlay">
+            <img src="Application Engineering 1.png" alt="" class="overlay_img">
+            <img src="Application Engineering.png" alt="" class="overlay_wup">
+            <img src="fillers.png" alt="" class="overlay_fillers">
+        </div>
+        <img src="left_wup.png" alt="" class="left_wup">
+        <div class="lorem_1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae id neque corrupti
+                iure numquam sit. Iure magnam quisquam tenetur cupiditate quia, in, nam totam ratione nihil dolorum sit
+                adipisci? Iusto neque id ullam perferendis earum atque quam, officia ab ea recusandae enim ipsam,
+                voluptatem
+                consequatur possimus, maiores placeat totam sapiente. Tempora ullam repellendus veniam nostrum quidem
+                enim
+                perferendis suscipit illo accusamus nam! Dolor quibusdam ipsum odit, cumque dicta voluptatum atque
+                similique
+                et aspernatur est adipisci perspiciatis soluta deleniti beatae inventore explicabo consequatur facere
+                dignissimos eveniet, blanditiis aut. Et, soluta quasi. Ipsam et velit corporis veniam voluptate nihil
+                accusantium dolorem.</p>
+            <br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, ipsum similique ut quaerat esse ducimus non
+            sit corporis explicabo, reprehenderit maiores quia, optio illo aliquid quas debitis suscipit sapiente? Minus
+            commodi dolores consectetur consequatur est harum sunt quae, repellat qui?
+        </div>
+        <div class="main_body">
+            <p id="mb_head">Key deliverables of the team include</p>
+            <img src="Frame 11.png" alt="" class="mb_filler_1">
+            <img src="Frame 12.png" alt="" class="mb_filler_2">
+            <img src="Frame 13.png" alt="" class="mb_filler_3">
+            <img src="Frame 14.png" alt="" class="mb_filler_4">
+            <img src="Group 72.png" alt="" class="mb_filler_5">
+        </div>
+    </div>
+</body>
+
+</html>
